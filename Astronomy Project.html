@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light and Smoke</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for clickable results */
+        .result-link {
+            text-decoration: none;
+            color: blue;
+        }
+        .result-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional CSS for logo positioning */
+        header {
+            position: relative;
+            background: linear-gradient(135deg, #4a148c, #311b92);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1.5s ease-out;
+            background-image: linear-gradient(135deg, #ff4081, #ff80ab);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 50px; /* Adjust size as needed */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 25px;
+            transition: background 0.3s, color 0.3s, transform 0.3s;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        nav ul li a:hover {
+            background-color: #ff4081;
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>โครงงานวิทยาศาสตร์ เรื่องแสงและควัน</h1>
+        <img src="photos/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">หน้าหลัก</a></li>
+                <li><a href="#experiments">การทดลอง</a></li>
+                <li><a href="#about">จัดทำโดย</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>แสงและควัน</h2>
+        <p>ในโลกของวิทยาศาสตร์ การศึกษาเกี่ยวกับพฤติกรรมของแสงและผลกระทบที่มีต่อมันเป็นเรื่องที่น่าสนใจและสำคัญอย่างยิ่ง หนึ่งในปัจจัยที่มีผลต่อความสว่างของแสงที่เรามองเห็นคือการมีอยู่ของละอองลอยในบรรยากาศ ซึ่งสามารถเกิดจากหลายแหล่ง เช่น ควันจากการเผาไหม้หรือฝุ่นละออง
+
+            โครงงานวิทยาศาสตร์นี้มุ่งเน้นไปที่การทดลองเพื่อศึกษาและอธิบายผลของละอองลอยที่มีต่อความสว่างของแสง โดยการทดลองจะดำเนินการโดยการใช้เทคนิคการวัดความสว่างของแสงในสภาพแวดล้อมที่มีการปล่อยควันเข้าไปในอ่างที่มีแสงสว่าง โครงการนี้จะช่วยให้เราเข้าใจได้ลึกซึ้งถึงกลไกที่ทำให้แสงมีการเปลี่ยนแปลงไปตามปริมาณของละอองลอยที่มีอยู่ และยังช่วยเสริมความรู้เกี่ยวกับวิธีการวัดและการควบคุมสภาพแวดล้อมในการทดลอง
+            
+            การศึกษานี้จะนำไปสู่ความเข้าใจที่ดีขึ้นเกี่ยวกับการทำงานของแสงและผลกระทบของการมีละอองลอย ซึ่งเป็นข้อมูลที่มีค่าในการวิจัยด้านวิทยาศาสตร์และการประยุกต์ใช้งานในชีวิตประจำวัน</p>
+    </section>
+
+    <section id="experiments">
+        <h2>การทดลอง</h2>
+        <div class="experiment">
+           
+            <h3>วัตถุประสงค์</h3>
+            <p>ทดลองและอธิบายผลของละอองลอยที่มีต่อความสว่างของแสง</p>
+
+            <h3>วัสดุ-อุปกรณ์</h3>
+            <ul>
+                <li>ตู้ปลาขนาด 8 นิ้ว_________________________________________1 ตู้</li>
+                <li>ไฟฉาย_________________________________________________1 กระบอก</li>
+                <li>ธูป____________________________________________________1 ดอก</li>
+                <li>ลักซ์มิเตอร์______________________________________________1 อัน</li>
+                <li>ขาตั้งพร้อมที่จับ__________________________________________  2 ชุด</li>
+            </ul>
+
+            <h3>วิธีการทำกิจกรรม</h3>
+            <ol>
+                <li>จัดทำชุดอุปกรณ์ดังนี้</li>
+                <p class="small-text">1.1 ยึดกระบอกไฟฉายกับขาตั้งชุดที่ 1 และ ยึดลักซ์มิเตอร์กับขาตั้งชุดที่ 2</p>
+                <p class="small-text">1.2 วางขาตั้งที่ยึดกระบอกไฟฉายและขาตั้งที่ยึดลักซ์มิเตอร์ไว้ด้านตรงข้ามกันของตู้ปลา ดังรูป</p>
+                <img src="photos/1.png" alt="" class="experiment-img">
+                <li>เปิดไฟฉายแล้วเปิดลักซ์มิเตอร์เพื่อวัดความสว่างของแสง และบันทึกผล</li>
+                <li>นำธูปที่จุดแล้วไปใส่ในตู้ปลา ทิ้งไว้ 3 นาที ให้มีควันกระจายเต็มตู้ปลา จากนั้น วัดความสว่างของแสง และบันทึกผล</li>
+                <li>นำเสนอผลการทำกิจกรรมและอภิปรายผลร่วมกัน</li>
+            </ol>    
+            
+            <h3>ตารางสรุปผลการทดลอง</h3>
+            <h5>เราได้ทำการทดลอง และวัดผลค่าความสว่างของแสง มีค่าดังต่อไปนี้</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th>รูปแบบการทดลอง</th>
+                        <th><a href="results1.html" class="result-link">การทดลองครั้งที่ 1 (คลิกเพื่อดูวิดิโอ)</a></th>
+                        <th><a href="results2.html" class="result-link">การทดลองครั้งที่ 2 (คลิกเพื่อดูวิดิโอ)</a></th>
+                        <th><a href="results3.html" class="result-link">การทดลองครั้งที่ 3 (คลิกเพื่อดูวิดิโอ)</a></th>
+                        <th><a href="results4.html" class="result-link">การทดลองครั้งที่ 4 (คลิกเพื่อดูวิดิโอ)</a></th>
+                        <th><a href="results5.html" class="result-link">การทดลองครั้งที่ 5 (คลิกเพื่อดูวิดิโอ)</a></th>
+                        <th>ค่าเฉลี่ย</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ไม่มีควัน</td>
+                        <td>193.4 LUX</td>
+                        <td>160.7 LUX</td>
+                        <td>178.3 LUX</td>
+                        <td>159.7 LUX</td>
+                        <td>148.5 LUX</td>
+                        <td>168.1 LUX</td>
+                    </tr>
+                    <tr>
+                        <td>มีควัน</td>
+                        <td>126.7 LUX</td>
+                        <td>52.4 LUX</td>
+                        <td>69.0 LUX</td>
+                        <td>127.1 LUX</td>
+                        <td>70.6 LUX</td>
+                        <td>89.16 LUX</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+                <h4>ความสว่างของแสงหลังปล่อยควันธูปมีค่าลดลง เมื่อเปรียบเทียบกับค่าความสว่างของแสงก่อนจุดธูป</h4>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>จัดทำโดย</h2>
+        <p>
+            1.นายธนโชติ แก้วสิงห์ ม.6/2 เลขที่4<br>
+            2.นายนพพล ศรีแก้ว ม.6/2 เลขที่5<br>
+            3.นายจิรภัทร จันทรมณี ม.6/2 เลขที่6<br>
+            4.นายรัฐภูมิ ธนาธิติวุฒิ ม.6/2 เลขที่7<br>
+            5.นายยุทธกานต์ พลอยกระจ่าง ม.6/2 เลขที่8<br>
+            6.นายณัฏฐพัชร พงษ์ธนานิกร ม.6/2 เลขที่10
+        </p>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+    background-image: linear-gradient(to right, rgba(248, 255, 247, 0.5), rgba(237, 246, 255, 0.7));
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(135deg, #4a148c, #311b92);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1.5s ease-out;
+    background-image: linear-gradient(135deg, #ff4081, #ff80ab);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 140px; /* Adjust size as needed */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+    position: static;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:hover {
+    background-color: #ff4081;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styling */
+section {
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 900px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1.2s ease-in-out;
+    border-top: 5px solid #ff4081;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #ff4081;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 4px solid #ff4081;
+    padding-bottom: 15px;
+    background-image: linear-gradient(120deg, #ff80ab, #ffd1dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #555;
+}
+
+.experiment {
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #e0f7fa, #ffebee);
+    border: 1px solid #d0d0d0;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiment:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.experiment h3 {
+    font-size: 2rem;
+    color: #ff4081;
+}
+
+
+.experiment-img {
+    width: 50%; /* Adjust the percentage as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+caption {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.small-text {
+    font-size: smaller;
+}
+
+.experiment-img {
+    width: 50%;
+    height: auto;
+}
+
+
+
+button {
+    padding: 14px 30px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+    background-color: #d81b60;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Experiment Details Styling */
+.experiment-details {
+    margin-top: 20px;
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8bbd0;
+    border-radius: 12px;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.experiment-details.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.experiment-details ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.experiment-details ol {
+    padding-left: 30px;
+}
+
+/* About and Contact Section */
+#about, #contact {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #311b92;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #311b92;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    box-shadow: 0px -6px 12px rgba(0, 0, 0, 0.4);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    nav ul li a {
+        padding: 12px;
+        display: block;
+        text-align: center;
+    }
+
+    section {
+        margin: 40px 20px;
+        padding: 30px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .experiment {
+        margin-bottom: 30px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .experiment {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
